@@ -1,3 +1,6 @@
+
+#include "pstdint.h"
+
 #include "Platform.h"
 #include "Hashes.h"
 #include "KeysetTest.h"
@@ -79,7 +82,7 @@ HashInfo g_hashes[] =
   { MurmurHash3_x86_128, 128, 0xB3ECE62A, "Murmur3C",    "MurmurHash3 for x86, 128-bit" },
   { MurmurHash3_x64_128, 128, 0x6384BA69, "Murmur3F",    "MurmurHash3 for x64, 128-bit" },
 
-  { PMurHash32_test,      32, 0xB0F57EE3, "PMurHash32",  "Shane Day's portable-ized MurmurHash3 for x86, 32-bit." },
+  //{ PMurHash32_test,      32, 0xB0F57EE3, "PMurHash32",  "Shane Day's portable-ized MurmurHash3 for x86, 32-bit." },
 };
 
 HashInfo * findHash ( const char * name )

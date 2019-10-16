@@ -38,7 +38,7 @@ void SetAffinity ( int cpu );
 
 #else	//	defined(_MSC_VER)
 
-#include <stdint.h>
+#include "pstdint.h"
 
 #define	FORCE_INLINE inline __attribute__((always_inline))
 #define	NEVER_INLINE __attribute__((noinline))
